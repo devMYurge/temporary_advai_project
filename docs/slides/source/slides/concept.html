@@ -1,0 +1,35 @@
+<section id="concept" style="background:#F7F8F4;color:#1B2A25;font-family:'Public Sans', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:32px">
+<p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#A85F10">The project</p>
+<h2 style="font-family:'Source Serif 4', Georgia, serif;font-size:64px;font-weight:600;line-height:1.1;color:#17332B">Explore each outlet’s style, then write in it</h2>
+<div style="display:flex;gap:32px">
+<div style="flex:1;display:flex;flex-direction:column;gap:20px;background:#EAF0EC;border:1px solid #D2DFD7;border-radius:16px;padding:40px">
+<div style="display:flex;align-items:center;gap:20px">
+<x-icon name="Chart" style="color:#2F8F6B;width:56px;height:56px"></x-icon>
+<h3 style="font-family:'Source Serif 4', Georgia, serif;font-size:40px;font-weight:600;color:#17332B">Explorer</h3>
+</div>
+<ul style="font-size:28px;line-height:1.4;color:#1B2A25">
+<li>Style fingerprint per outlet: sentence length, quotes, readability</li>
+<li>Sociopolitical map of outlets, based on cited external ratings</li>
+<li>Word shifts: what one outlet over-uses against another on the same topic</li>
+<li>Outlet by topic heatmap of any metric</li>
+</ul>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:20px;background:#EAF0EC;border:1px solid #D2DFD7;border-radius:16px;padding:40px">
+<div style="display:flex;align-items:center;gap:20px">
+<x-icon name="Chat" style="color:#2F8F6B;width:56px;height:56px"></x-icon>
+<h3 style="font-family:'Source Serif 4', Georgia, serif;font-size:40px;font-weight:600;color:#17332B">Generator</h3>
+</div>
+<ul style="font-size:28px;line-height:1.4;color:#1B2A25">
+<li>Small open model (1B–4B), fine-tuned with LoRA, served locally with Ollama</li>
+<li>Input: outlet, topic and date</li>
+<li>Output: an article in that outlet’s style</li>
+<li>Marks the patterns in the text: loaded wording, hedging, quote and attribution style</li>
+</ul>
+</div>
+</div>
+<div style="background:#17332B;border-radius:16px;padding:24px 40px">
+<p style="font-size:28px;line-height:1.4;color:#EAF0EC"><span style="color:#F0B04A;font-weight:600">Data: </span>CC-News articles labeled by outlet, topic and date. Bias is measured against cited external ratings.</p>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:1200px;font-size:24px;color:#4A5A53">Advanced AI · IE University · Project I</p>
+<aside>One sentence for the whole project: a platform that shows how each newspaper writes and then writes new articles in that voice. The explorer is the analysis side: style fingerprints, a sociopolitical map, word shifts and a heatmap by topic. The generator is a small open model fine-tuned with LoRA that takes outlet, topic and date, and marks the patterns it used. Everything about bias is measured against cited external ratings, not asserted.</aside>
+</section>

@@ -7,7 +7,7 @@ Advanced AI group project (IE University, October 2026). Project I from the cour
 A platform with two parts.
 
 1. **Explorer.** Visualizes what each newspaper does: language patterns, sociopolitical lean and bias, per outlet and per topic.
-2. **Generator.** A small open model, fine-tuned with LoRA, that writes an article from three conditions (outlet, topic, date) and highlights those patterns in the text it produces.
+2. **Generator.** A small open model, fine-tuned with LoRA, that writes an article from three conditions (outlet, topic, date) and marks those patterns in the text it produces.
 
 ## Deliverables (from the course brief)
 
@@ -39,9 +39,9 @@ The kick-off session also asks for a 2-slide planning document and a pitch of at
 ```
 README.md
 docs/
-  research.md     State of the art, data, model, experiments, evaluation, sources
+  research.md          State of the art, data, model, experiments, evaluation, sources
+  brief/               Course instructions (group project brief, kick-off deck)
+  slides/              Pitch slides: slides.md (text) and source/ (editable deck)
 ```
 
 Planned: `data/` (git-ignored), `src/pipeline/`, `src/train/`, `src/eval/`, `app/`.
-
-The course PDFs in this folder are not tracked (see `.gitignore`).

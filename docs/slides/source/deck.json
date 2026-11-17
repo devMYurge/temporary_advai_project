@@ -1,0 +1,17 @@
+{
+  "v": 4,
+  "createdOnFiles": { "v": 1, "at": "2026-10-29T18:05:00Z" },
+  "lists": "css",
+  "title": "News generation: pitch slides",
+  "order": ["concept", "build", "plan"],
+  "sections": {
+    "s1": { "description": "What we build: an explorer of outlet patterns and a generator that writes in an outlet’s voice.", "start": "concept" },
+    "s2": { "description": "How we build it: five stages from CC-News to the platform.", "start": "build" },
+    "s3": { "description": "Roles, deliverables and risks.", "start": "plan" }
+  },
+  "faces": {
+    "source-serif-4": { "family": "Source Serif 4", "href": "https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;600&display=swap" },
+    "public-sans": { "family": "Public Sans", "href": "https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;600&display=swap" }
+  },
+  "designSystems": []
+}

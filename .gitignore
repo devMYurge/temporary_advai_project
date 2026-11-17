@@ -1,7 +1,7 @@
 .DS_Store
-# Course material (not part of the project code)
-Group Project - Advanced_AI .pdf
-Kick_off_AdvAI_2026.pdf
+# Root copies of the course PDFs (tracked copies live in docs/brief/)
+/Group Project - Advanced_AI .pdf
+/Kick_off_AdvAI_2026.pdf
 # Data and model artifacts
 data/
 adapters/
