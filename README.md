@@ -34,10 +34,37 @@ The kick-off session also asks for a 2-slide planning document and a pitch of at
 - Base model family. The GGUF export in MLX-LM supports Llama, Mistral and Mixtral architectures only.
 - Group size and roles.
 
+## Setup
+
+Everyone uses the same conda environment, `advai-news`, defined in `environment.yml` (Python 3.12, packages from conda-forge, pinned versions).
+
+```bash
+# 1. Install Anaconda or Miniconda (once per machine)
+
+# 2. Create the environment
+conda env create -f environment.yml
+
+# 3. Activate it before running anything
+conda activate advai-news
+# notebooks (pick the advai-news kernel)
+jupyter lab
+# scripts
+python src/pipeline/...
+```
+
+Rules:
+
+- Add a dependency by editing `environment.yml` (pinned version), then run `conda env update -f environment.yml --prune`. Do not `pip install` or `conda install` by hand, or the environments drift apart.
+- After pulling a change to `environment.yml`, run the same update command.
+- `mlx-lm` (training) installs only on Apple Silicon Macs. Everything else works on any OS. Teammates on other machines can do data, EDA and evaluation, and the training runs on a Mac.
+- Data goes in `data/` (git-ignored). The Hugging Face dataset downloads into the HF cache on first load.
+
 ## Layout
 
 ```
 README.md
+environment.yml      Shared conda environment (advai-news)
+notebooks/           EDA and exploration
 docs/
   research.md          State of the art, data, model, experiments, evaluation, sources
   brief/               Course instructions (group project brief, kick-off deck)
